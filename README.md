@@ -54,8 +54,6 @@ Install [axios] (verify installation and version similar to above commands):
 ### Update The Policy:
 1. Login into NEAR.  Open a WSL (on windows) or linux terminal and login into NEAR CLI:
 
-   NEAR login
-   
        near login   
    
 The command will take you to a near login page (additional instructions can be found in the [NEAR CLI] documents)
@@ -63,6 +61,8 @@ The command will take you to a near login page (additional instructions can be f
 2. Set some local variables for making the calls easier:
 
    DAO_ACCOUNT='daoname'
+ 
+       DAO_ACCOUNT = 'daoname' 
  
 NOTE: daoname should not include 'sputnikv2.near' or 'sputnikv2.testnet'.  This will be added by the sputnik CLI tool depending on the NEAR environment you are logged into.
  
