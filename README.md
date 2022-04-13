@@ -59,14 +59,14 @@ Install [axios] (verify installation and version similar to above commands):
 The command will take you to a near login page (additional instructions can be found in the [NEAR CLI] documents)
 
 2. Set some local variables for making the calls easier:
-
-   DAO_ACCOUNT='daoname'
  
        DAO_ACCOUNT = 'daoname' 
  
 NOTE: daoname should not include 'sputnikv2.near' or 'sputnikv2.testnet'.  This will be added by the sputnik CLI tool depending on the NEAR environment you are logged into.
  
    SIGNER_ACCOUNT='userName'
+
+       SIGNER_ACCOUNT = 'userName' 
 
 NOTE: user name should be the name of the account you logged in with.
  
@@ -75,7 +75,10 @@ NOTE: user name should be the name of the account you logged in with.
 4.  Submit the policy proposal with the following command:
  
    sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
- 
+
+       DAO_ACCOUNT = 'daoname' sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
+
+
  You should see a message like:
  
  ![SuccessMessage]
