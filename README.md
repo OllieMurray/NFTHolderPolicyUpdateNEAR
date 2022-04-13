@@ -63,8 +63,6 @@ The command will take you to a near login page (additional instructions can be f
        DAO_ACCOUNT = 'daoname' 
  
 NOTE: daoname should not include 'sputnikv2.near' or 'sputnikv2.testnet'.  This will be added by the sputnik CLI tool depending on the NEAR environment you are logged into.
- 
-   SIGNER_ACCOUNT='userName'
 
        SIGNER_ACCOUNT = 'userName' 
 
@@ -76,7 +74,8 @@ NOTE: user name should be the name of the account you logged in with.
 
        sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
 
-
+       sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT 
+ 
  You should see a message like:
  
  ![SuccessMessage]
