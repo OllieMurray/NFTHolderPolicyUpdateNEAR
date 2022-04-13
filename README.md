@@ -28,10 +28,21 @@ Install [axios] (verify installation and version similar to above commands):
 
 ![CollAuthor]
 
+3. Modify the API string in GetCollectionID.js so that it references your collections author. It looks like this:
 
+![APIStringColl]
 
-3. 
+   The query will return a string like this, this is the collection Id and should be used in step 4.
  
+4. Use the result from the previous step to modify the API string in GetHolders.js, so that it references your collection ID. It looks like this:
+
+![APIStringHolders]
+
+   The query will return a list of all of the nft holders formatted such that they can be dropped right into our policy proposal.  Keep this for later.
+
+## 2. Propose holders policy to sputnikv2 DAO
+### Install prerequisites:
+1. Install NEAR CLI, a detailed walk through can be found [Here]:
  
 [Paras]: https://paras.id/
 [AstroDao]: https://astrodao.com/
@@ -40,3 +51,5 @@ Install [axios] (verify installation and version similar to above commands):
 [Node.js]: https://nodejs.dev/download/package-manager/
 [axios]: https://www.npmjs.com/package/axios
 [CollAuthor]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/MonkeyGodImage.png "Collection Author"
+[APIStringColl]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/APIString.png "API String"
+[APIStringHolders]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/APIString.png "API String"
