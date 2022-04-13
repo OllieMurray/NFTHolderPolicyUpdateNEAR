@@ -10,9 +10,9 @@ MVP for updating DAO with a 'Holders' Policy.
  Install prerequisites:
  Install NPM:
  
- '''cmd
+ 
  npm install -g npm
- '''
+
  
 
 
