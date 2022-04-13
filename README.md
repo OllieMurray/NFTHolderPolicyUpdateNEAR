@@ -73,10 +73,8 @@ NOTE: user name should be the name of the account you logged in with.
 3.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js
  
 4.  Submit the policy proposal with the following command:
- 
-   sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
 
-       DAO_ACCOUNT = 'daoname' sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
+       sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
 
 
  You should see a message like:
