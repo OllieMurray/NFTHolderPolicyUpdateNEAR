@@ -25,8 +25,8 @@ Install [axios] (verify installation and version similar to above commands):
 ### Query holders of NFT from [Paras]:
 1. navigate to the [Paras] landing page and find the name of your nft project through the search bar
 2. select the name of the collection author, for example:
-Collection Author: 
-![alt text][CollAuthor]
+
+![CollAuthor]
 
 
 
