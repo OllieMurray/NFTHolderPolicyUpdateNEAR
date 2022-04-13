@@ -8,12 +8,15 @@ MVP for updating DAO with a 'Holders' Policy.
 ## 📘 Procedure:
 ### 1. Pull all NFT holders from [Paras]:
  Install prerequisites:
- Install NPM:
+ Install [NPM] and [Node.js]:
  
  
- npm install -g npm
+    npm install -g npm
+    
+ Check successfull installation:
+
+    npm install -g npm
+
 
  
-
-
- 
+[NPM]: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
