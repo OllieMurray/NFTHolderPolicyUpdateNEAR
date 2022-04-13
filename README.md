@@ -28,21 +28,61 @@ Install [axios] (verify installation and version similar to above commands):
 
 ![CollAuthor]
 
-3. Modify the API string in GetCollectionID.js so that it references your collections author. It looks like this:
+3. Modify the API string in CollectionID.js so that it references your collections author. It looks like this:
 
 ![APIStringColl]
 
    The query will return a string like this, this is the collection Id and should be used in step 4.
+   Run the query using the following command:
+   
+       node CollectionID.js
  
 4. Use the result from the previous step to modify the API string in GetHolders.js, so that it references your collection ID. It looks like this:
 
 ![APIStringHolders]
 
    The query will return a list of all of the nft holders formatted such that they can be dropped right into our policy proposal.  Keep this for later.
+   Run the query using the following command:
+   
+       node Holders.js
 
 ## 2. Propose holders policy to sputnikv2 DAO
 ### Install prerequisites:
-1. Install NEAR CLI, a detailed walk through can be found [Here]:
+1. Install [NEAR CLI]
+2. Install [Sputnik Dao CLI]
+
+### Update The Policy:
+1. Login into NEAR.  Open a WSL (on windows) or linux terminal and login into NEAR CLI:
+
+   NEAR login
+   
+The command will take you to a near login page (additional instructions can be found in the [NEAR CLI] documents)
+
+2. Set some local variables for making the calls easier:
+
+   DAO_ACCOUNT=<daoname>
+ 
+NOTE: daoname should not include 'sputnikv2.near' or 'sputnikv2.testnet'.  This will be added by the sputnik CLI tool depending on the NEAR environment you are logged into.
+ 
+   SIGNER_ACCOUNT=<userName>
+
+NOTE: user name should be the name of the account you logged in with.
+ 
+3.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js
+ 
+4.  Submit the policy proposal with the following command:
+ 
+   sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
+ 
+ You should see a message like:
+ 
+ ![SuccessMessage]
+
+ You should also see the policy proposal in the [AstroDao] or [AstroDaoTestNet] UIs.
+ 
+ Now it's time to VOTE!
+ 
+ 
  
 [Paras]: https://paras.id/
 [AstroDao]: https://astrodao.com/
@@ -53,3 +93,6 @@ Install [axios] (verify installation and version similar to above commands):
 [CollAuthor]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/MonkeyGodImage.png "Collection Author"
 [APIStringColl]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/CollectionIDAPI.png "API String"
 [APIStringHolders]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/HoldersAPI.png "API String"
+[NEAR CLI]: https://docs.near.org/docs/tools/near-cli
+[Sputnik Dao CLI]: https://www.npmjs.com/package/sputnikdao
+[SuccessMessage]:
