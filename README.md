@@ -72,12 +72,9 @@ NOTE: user name should be the name of the account you logged in with.
  
 4.  Submit the policy proposal with the following command:
 
-       sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
-
-       '''
+       ```
        sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT 
-       '''
-       
+       ```      
        
  You should see a message like:
  
