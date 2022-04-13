@@ -6,7 +6,11 @@ MVP for updating DAO with a 'Holders' Policy.
 2. Propose holders policy to sputnikv2 DAO
 
 ## 📘 Procedure:
-### Pull all NFT holders from [Paras]:
-1. Pull all NFT holders from [Paras]:
+### 1. Pull all NFT holders from [Paras]:
+ Install prerequisites:
+ Install NPM:
+ 
+ 
+
 
  
