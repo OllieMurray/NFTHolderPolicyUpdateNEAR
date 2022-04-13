@@ -56,6 +56,8 @@ Install [axios] (verify installation and version similar to above commands):
 
    NEAR login
    
+       near login   
+   
 The command will take you to a near login page (additional instructions can be found in the [NEAR CLI] documents)
 
 2. Set some local variables for making the calls easier:
@@ -95,4 +97,4 @@ NOTE: user name should be the name of the account you logged in with.
 [APIStringHolders]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/HoldersAPI.png "API String"
 [NEAR CLI]: https://docs.near.org/docs/tools/near-cli
 [Sputnik Dao CLI]: https://www.npmjs.com/package/sputnikdao
-[SuccessMessage]:
+[SuccessMessage]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/SuccessMessage.png
