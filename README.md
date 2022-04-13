@@ -51,5 +51,5 @@ Install [axios] (verify installation and version similar to above commands):
 [Node.js]: https://nodejs.dev/download/package-manager/
 [axios]: https://www.npmjs.com/package/axios
 [CollAuthor]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/MonkeyGodImage.png "Collection Author"
-[APIStringColl]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/APIString.png "API String"
-[APIStringHolders]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/APIString.png "API String"
+[APIStringColl]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/CollectionIDAPI.png "API String"
+[APIStringHolders]: https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/HoldersAPI.png "API String"
