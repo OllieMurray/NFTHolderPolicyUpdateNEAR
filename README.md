@@ -108,5 +108,5 @@ The response will look something like this.  You can see that this is similar to
 [NEAR CLI]: https://docs.near.org/docs/tools/near-cli
 [Sputnik Dao CLI]: https://www.npmjs.com/package/sputnikdao
 [SuccessMessage]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/SuccessMessage.png
-![ExamplePolicyResponse]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/getPolicyOutput.png
+[ExamplePolicyResponse]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/getPolicyOutput.png
 [here]: https://github.com/near-daos/sputnik-dao-contract/tree/feat/enchance-contract-v2-readme/sputnikdao2
