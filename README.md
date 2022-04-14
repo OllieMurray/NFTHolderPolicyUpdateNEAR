@@ -67,10 +67,20 @@ NOTE: daoname should not include 'sputnikv2.near' or 'sputnikv2.testnet'.  This 
        SIGNER_ACCOUNT = 'userName' 
 
 NOTE: user name should be the name of the account you logged in with.
+
+3.  You can pull an existing policy from the DAO and modify it as you see fit.  To pull an existing policy use the following command in the sputnik DAO CLI:
+  
+       ```
+       sputnikdao get_policy --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT
+       ```
+       
+The response will look something like this.  You can see that this is similar to the one in the "new_policy_sample.json" file but with different settings.  If there are multiple Roles defined in your DAO then you will want to take the role that best corresponds with the policy you want to apply to the Holders group.  You can find more details on how to modify policies [here].
+
+![ExamplePolicyResponse]
+
+4.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js
  
-3.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js
- 
-4.  Submit the policy proposal with the following command:
+5.  Submit the policy proposal with the following command:
 
        ```
        sputnikdao proposal policy new_policy_sample.json --daoAcc $DAO_ACCOUNT --accountId $SIGNER_ACCOUNT 
@@ -98,3 +108,5 @@ NOTE: user name should be the name of the account you logged in with.
 [NEAR CLI]: https://docs.near.org/docs/tools/near-cli
 [Sputnik Dao CLI]: https://www.npmjs.com/package/sputnikdao
 [SuccessMessage]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/SuccessMessage.png
+![ExamplePolicyResponse]:https://github.com/OllieMurray/NFTHolderPolicyUpdateNEAR/blob/main/getPolicyOutput.png
+[here]: https://github.com/near-daos/sputnik-dao-contract/tree/feat/enchance-contract-v2-readme/sputnikdao2
