@@ -78,7 +78,7 @@ The response will look something like this.  You can see that this is similar to
 
 ![ExamplePolicyResponse]
 
-4.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js
+4.  Configure the policy file for proposal submission.  The policy file is called "new_policy_sample.json", just replace the existing names under "Group" with the query response from Holders.js and edit the other sections.  Or edit the response from step 3.
  
 5.  Submit the policy proposal with the following command:
 
